@@ -6,14 +6,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <form id="form-member" method="POST" class="form-horizontal"
-                          action="{{ isset($curso) ? route('curso.update', $curso->id) : route('curso.store') }}"
-                          enctype="multipart/form-data">
+                        action="{{ isset($curso) ? route('curso.update', $curso->id) : route('curso.store') }}"
+                        enctype="multipart/form-data">
 
                         @csrf
                         @isset($curso)
-                            @method("PUT")
+                            @method('PUT')
                         @else
-                            @method("POST")
+                            @method('POST')
                         @endisset
 
                         <div class="card ">
@@ -29,7 +29,7 @@
                                         <div class="col-sm-12">
                                             <div class="alert alert-success">
                                                 <button type="button" class="close" data-dismiss="alert"
-                                                        aria-label="Close">
+                                                    aria-label="Close">
                                                     <i class="material-icons">close</i>
                                                 </button>
                                                 <span>{{ session('status') }}</span>

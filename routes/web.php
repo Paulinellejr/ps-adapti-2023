@@ -21,6 +21,7 @@ use App\Http\Controllers\AlunoController;
 |
 */
 
+Route::post('/contratar/{aluno}', 'app\Http\Controllers\AlunoController@contratar')->name('aluno.contratar');
 Route::middleware('locale')->group(function () {
 
     Route::put('/locale', [LocaleController::class, 'setLocale'])->name('locale');
@@ -54,5 +55,4 @@ Route::middleware('locale')->group(function () {
     });
 
     Route::get('/', [SiteController::class, 'index'])->name('site');
-
 });

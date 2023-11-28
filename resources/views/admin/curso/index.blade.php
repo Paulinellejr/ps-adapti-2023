@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'curso-management', 'titlePage' => __('Users')])
+@extends('layouts.app', ['activePage' => 'curso-management', 'titlePage' => __('Cursos')])
 
 @section('content')
     <div class="content">
@@ -30,27 +30,27 @@
                                         </th>
                                     </thead>
                                     <tbody>
-{{--                                        @foreach ($cursos as $curso)--}}
-{{--                                            <tr>--}}
-{{--                                                <td>{{ $curso->id }}</td>--}}
-{{--                                                <td>{{ $curso->curso }}</td>--}}
-{{--                                                <td>--}}
-{{--                                                    <!-- botao editar -->--}}
-{{--                                                    <a href="{{ route('curso.edit', $curso->id) }}">--}}
-{{--                                                        <button type="button" title="{{ __('Edit') }}"--}}
-{{--                                                            class="btn btn-warning">--}}
-{{--                                                            <i class="material-icons" style="color: white">edit</i>--}}
-{{--                                                        </button>--}}
-{{--                                                    </a>--}}
-{{--                                                    <!-- Botao apagar -->--}}
-{{--                                                    <button type="button" title="{{ __('Delete') }}" data-toggle="modal"--}}
-{{--                                                        data-target="#modal-excluir" data-id="{{ $curso->id }}"--}}
-{{--                                                        class="btn btn-danger">--}}
-{{--                                                        <i class="material-icons">close</i>--}}
-{{--                                                    </button>--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
-{{--                                        @endforeach--}}
+                                        @foreach ($cursos as $curso)
+                                            <tr>
+                                                <td>{{ $curso->id }}</td>
+                                                <td>{{ $curso->curso }}</td>
+                                                <td>
+                                                    <!-- botao editar -->
+                                                    <a href="{{ route('curso.edit', $curso->id) }}">
+                                                        <button type="button" title="{{ __('Edit') }}"
+                                                            class="btn btn-warning">
+                                                            <i class="material-icons" style="color: white">edit</i>
+                                                        </button>
+                                                    </a>
+                                                    <!-- Botao apagar -->
+                                                    <button type="button" title="{{ __('Delete') }}" data-toggle="modal"
+                                                        data-target="#modal-excluir" data-id="{{ $curso->id }}"
+                                                        class="btn btn-danger">
+                                                        <i class="material-icons">close</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -74,7 +74,6 @@
                             color: red;
                             font-weight: bold;
                         }
-
                     </style>
                     <div class="modal-footer">
                         <form id="form-excluir" method="POST" enctype="multipart/form-data">
