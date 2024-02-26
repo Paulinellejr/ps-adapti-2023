@@ -10,7 +10,7 @@
 Você precisa de fazer um fork do projeto para seu repositório.
 (Confira o link da documentação)
 
-Depois, no terminal na pasta do seu projeto dê o comando: 
+Depois, no terminal na pasta do seu projeto dê o comando:
 
 - git remote add **seunome** **linkdofork**
 
@@ -24,3 +24,5 @@ Ao concluir uma tarefa:
 - git add .
 - git commit -m **nomedocommit**
 - git push **seunome** **nomebranch**
+
+Esse projeto é um dos desafios do processo seletivo para entrar na empresa junior Adapti Soluções Web
