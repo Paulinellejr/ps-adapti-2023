@@ -100,7 +100,7 @@ class AlunoController extends Controller
     {
         $aluno = $this->alunos->find($id);
 
-        Storage::delete('public/' . $aluno->imagem);
+        Storage::disk('public')->delete(substr($aluno->imagem, 9));
 
         $aluno->delete();
 
