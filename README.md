@@ -24,3 +24,5 @@ Ao concluir uma tarefa:
 - git add .
 - git commit -m **nomedocommit**
 - git push **seunome** **nomebranch**
+
+  Esse projeto é um desafio do  processo seletivo para entrar na  empresa junior Adapti Soluções web.
